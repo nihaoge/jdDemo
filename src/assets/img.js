@@ -1,3 +1,9 @@
+import skicon from './icons/skill.png'
+export const icon = {
+  skicon
+}
+
+
 // 底部导航的图片资源
 export const navicons = {
     icon1: 'https://img11.360buyimg.com/jdphoto/s130x100_jfs/t1/81741/30/12345/4140/5d9c4b13E726f0a1e/82c582e7c375e4b3.png',

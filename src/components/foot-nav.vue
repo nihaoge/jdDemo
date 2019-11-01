@@ -1,10 +1,14 @@
 <template>
   <div>
     <router-link to="/home" tag="span">
-      <img :src="img.icon1" alt />
+      <img v-if="index==1" :src="img.icon1on" alt />
+      <img v-else :src="img.icon1" alt />
+
     </router-link>
     <router-link to="/cate" tag="span">
-      <img :src="img.icon2" alt />
+      <img v-if="index==2" :src="img.icon2on" alt />
+      <img v-else :src="img.icon2" alt />
+
     </router-link>
     <router-link to="/jdm" tag="span">
       <img :src="img.icon3" alt />
@@ -13,7 +17,9 @@
       <img :src="img.icon4" alt />
     </router-link>
     <router-link to="/user" tag="span">
-      <img :src="img.icon5" alt />
+      <img v-if="index==3" :src="img.icon5on" alt />
+      <img v-else :src="img.icon5" alt />
+
     </router-link>
   </div>
 </template>
@@ -22,7 +28,9 @@
 import { navicons } from "../assets/img";
 
 export default {
+  props:['index'],
   data() {
+
     return {
       img: navicons
     };

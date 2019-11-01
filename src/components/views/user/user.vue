@@ -1,7 +1,7 @@
 <template>
   <div>
       我的
-      <foot></foot>
+      <foot index="3"></foot>
   </div>
 </template>
 

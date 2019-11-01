@@ -21,7 +21,11 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+html,body{
+  padding-bottom: 1rem;
+  background: rgb(245, 245, 245);
 
+}
 *{
   margin: 0;
   padding: 0;

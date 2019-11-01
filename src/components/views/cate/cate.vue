@@ -1,7 +1,7 @@
 <template>
   <div>
       分类
-      <foot></foot>
+      <foot index="2"></foot>
   </div>
 </template>
 
