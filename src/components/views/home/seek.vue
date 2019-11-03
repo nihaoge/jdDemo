@@ -80,6 +80,8 @@ export default {
       outline: none;
       border: none;
       padding-left: .2rem;
+      width: 4.8rem;
+      font-size: .3rem;
     }
   }
   > span {

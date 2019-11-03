@@ -1,5 +1,5 @@
 <template>
-  <div class="sbox">
+  <div class="sbox" >
     <div class="sk-box">
       <div class="sk-top">
         <div><img :src="icon.skicon" alt=""></div>
@@ -9,7 +9,7 @@
       </div>
       <div class="arr-box">
         <div class="box1">
-        <div class="img-box" v-for="(item,idx) in skArr" :key="idx">
+        <div class="img-box" v-for="(item,idx) in skArr" :key="idx" @click="click(item)">
           <img :src="item.src" alt="" srcset="">
 
           <p class="text-p" v-text="item.original_price"></p>
@@ -27,8 +27,9 @@
 
 <script>
 import {icon} from '../../../assets/img'
-import {mapActions,mapState} from 'vuex'
+import {mapActions,mapState,mapMutations} from 'vuex'
 export default {
+
   data() {
     
     return {
@@ -43,7 +44,17 @@ export default {
     this.getsKill()
   },
 methods: {
-  ...mapActions(['getsKill'])
+  ...mapActions(['getsKill']),
+    ...mapMutations(["upcaArr"]),
+
+   click(item){
+      this.$messagebox.confirm('确定添加到购物车?').then(action=>{
+        if(action==='confirm'){
+          this.upcaArr({type:'insert',item:item})
+        }
+      })
+      
+    }
 },
 
 };

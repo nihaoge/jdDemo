@@ -6,7 +6,7 @@
     </div>
     <bannerNav></bannerNav>
     <ad></ad>
-    <sKill></sKill>
+    <sKill :item='item'></sKill>
     <div class="ads">
       <div class="t">
         <img class="timg" src="../../../assets/xy.png" alt srcset />
@@ -41,6 +41,7 @@ import BScroll from '@better-scroll/core'
 //引入组件
 
 export default {
+  props:['item'],
   components: {
     //导入组件
     foot,

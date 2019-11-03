@@ -1,5 +1,5 @@
 <template>
-<div class="box">
+<div class="box" >
 <div class="img-box">
 <div class="ad-box" v-for='(item,idx) in adimg' :key="idx">
     <img :src="item.src" alt="">
@@ -16,6 +16,9 @@ data() {
         adimg
     }
 },
+  methods: {
+   
+  },
 }
 </script>
 <style lang="scss" scoped>

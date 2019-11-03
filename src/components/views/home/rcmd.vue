@@ -1,5 +1,5 @@
 <template>
-  <div class="rcmd">
+  <div class="rcmd" >
     <img src="../../../assets/123.png" alt srcset />
     <div class="rcmd-box">
       <div v-for="(item,idx) in rcArr" :key="idx">
@@ -21,6 +21,7 @@ export default {
   
   computed: {
     ...mapState(["rcArr"])
+
   }
 };
 </script>
