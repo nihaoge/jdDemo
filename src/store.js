@@ -28,6 +28,9 @@ const store = new Vuex.Store({
         skArr:[],
         adArr:[],
         rcArr:[],
+        cateArr:[],
+        cucateArr:{},
+
         userinfo:{
             name:'zhh',
             mobile:'186000000'
@@ -43,12 +46,21 @@ const store = new Vuex.Store({
 
     },
     mutations:{
+
         updateskArr(state,payload){
             state.skArr = payload
         },
         updateadArr(state,payload){
             state.adArr=payload
             // console.log(state.adArr)
+        },
+        updatecateArr(state,payload){
+            state.cateArr = payload
+
+        },
+        upcucateArr(state,payload){
+            state.cucateArr = payload[0]
+
         },
         uprcArr(state,payload){
             state.rcArr=[...state.rcArr,...payload]
@@ -79,6 +91,9 @@ const store = new Vuex.Store({
             
             
 
+        },
+        updatacaArr(state,payload){
+            state.cucateArr = state.cateArr[payload]
         }
 
         
@@ -111,10 +126,20 @@ const store = new Vuex.Store({
                 
 
             })
+        },
+        getCate(){
+            fetch("./db/cates.json",data=>{
+               
+                
+                store.commit('updatecateArr',data);
+                console.log(data);
+                store.commit("upcucateArr",data)
+
+            })
         }
 
 
-    },
+    }
     
 })
 export default store

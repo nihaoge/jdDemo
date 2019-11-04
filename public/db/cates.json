@@ -1,0 +1,161 @@
+{
+    "err": 0,
+    "msg": "success",
+    "data": [
+        {
+            "cate":"手机数码",
+            "list":[
+                {
+                    "title":"热门品牌",
+                    "list":[
+                        {
+                            "img":"//img20.360buyimg.com/focus/s140x140_jfs/t13759/194/897734755/2493/1305d4c4/5a1692ebN8ae73077.jpg",
+                            "name":"Apple"
+                        },
+                        {
+                            "img":"//img20.360buyimg.com/focus/s140x140_jfs/t12820/326/909017718/7138/68cde747/5a169243N40eca33c.jpg",
+                            "name":"Meizhu"
+                        },
+                        {
+                            "img":"//img13.360buyimg.com/focus/s140x140_jfs/t11509/131/2348573811/3425/4f20fe6/5a16925aN8a6dfd03.png",
+                            "name":"Samsung"
+                        },
+                        {
+                            "img":"//img20.360buyimg.com/focus/s140x140_jfs/t19387/332/664528115/8176/5eabe8cb/5a9fa5e0N6754e52a.jpg",
+                            "name":"Smartisan"
+                        },{
+                            "img":"//img13.360buyimg.com/focus/s140x140_jfs/t11209/71/2351231464/4158/fc0c415c/5a16923fNfc14307e.jpg",
+                            "name":"Oneplus"
+                        },
+                        {
+                            "img":"https://ss1.baidu.com/70cFfyinKgQFm2e88IuM_a/forum/pic/item/7d1ed21b0ef41bd53ad6e03b53da81cb38db3d73.jpg",
+                            "name":"HTC"
+                        }
+                    ]
+                },
+                {
+                    "title":"手机配件",
+                    "list":[
+                        {
+                            "img":"//img20.360buyimg.com/focus/s140x140_jfs/t18556/113/1299885588/4128/81ee8564/5ac48786N17d8442a.jpg",
+                            "name":"充电器"
+                        },
+                        {
+                            "img":"//img30.360buyimg.com/focus/s140x140_jfs/t16627/197/1308314139/2592/1e40bf4e/5ac487a4Nc21fb4d0.jpg",
+                            "name":"转接头"
+                        },
+                        {
+                            "img":"//img14.360buyimg.com/focus/s140x140_jfs/t13657/281/912225045/5343/3109ae02/5a167b73Na69aae95.jpg",
+                            "name":"存储卡"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "cate":"电脑办公",
+            "list":[
+                {
+                    "title":"热门分类",
+                    "list":[
+                        {
+                            "img":"//img30.360buyimg.com/focus/s140x140_jfs/t11155/36/2330310765/10690/eb6754c3/5a17ba96N49561fea.png",
+                            "name":"笔记本"
+                        },
+                        {
+                            "img":"//img20.360buyimg.com/focus/s140x140_jfs/t12679/262/982342141/7023/d05a11e5/5a17ba57Nf179b4e4.jpg",
+                            "name":"显卡"
+                        },
+                        {
+                            "img":"//img10.360buyimg.com/focus/s140x140_jfs/t12865/295/960489437/5723/4f38f11/5a17ba8bN911b7264.jpg",
+                            "name":"电脑主机"
+                        },
+                        {
+                            "img":"//img30.360buyimg.com/focus/s140x140_jfs/t13798/322/988648789/3644/1adc5615/5a17ba6dNafc95373.jpg",
+                            "name":"显示器"
+                        }
+                    ]
+                },
+                {
+                    "title":"电脑配件",
+                    "list":[
+                        {
+                            "img":"//img20.360buyimg.com/focus/s140x140_jfs/t12685/330/958049282/6665/7716f391/5a17b602N70cb6fae.jpg",
+                            "name":"CPU"
+                        },
+                        {
+                            "img":"//img14.360buyimg.com/focus/s140x140_jfs/t11353/299/2402077156/2935/14c2980/5a17b5d6Ndd76bc59.jpg",
+                            "name":"电源"
+                        },
+                        {
+                            "img":"//img12.360buyimg.com/focus/s140x140_jfs/t11455/75/2350304185/6636/e301e187/5a16a58cNb6b027df.jpg",
+                            "name":"机械键盘"
+                        }, 
+                        {
+                            "img":"//img20.360buyimg.com/focus/s140x140_jfs/t18556/113/1299885588/4128/81ee8564/5ac48786N17d8442a.jpg",
+                            "name":"充电器"
+                        },
+                        {
+                            "img":"//img30.360buyimg.com/focus/s140x140_jfs/t16627/197/1308314139/2592/1e40bf4e/5ac487a4Nc21fb4d0.jpg",
+                            "name":"转接头"
+                        },
+                        {
+                            "img":"//img14.360buyimg.com/focus/s140x140_jfs/t13657/281/912225045/5343/3109ae02/5a167b73Na69aae95.jpg",
+                            "name":"存储卡"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "cate": "美妆护肤",
+            "list": [
+              {
+                "title": "当季主推",
+                "list": [
+                  {
+                    "img": "//img30.360buyimg.com/focus/s140x140_jfs/t19531/110/2538137867/14848/c3ec84ac/5afd3cc5N8aa4b7c8.jpg",
+                    "name": "美白"
+                  },
+                  {
+                    "img": "//img30.360buyimg.com/focus/s140x140_jfs/t17560/320/2504739891/10347/f04150c4/5afd3cbeN77d00886.jpg",
+                    "name": "防晒"
+                  }
+                ]
+              },
+              {
+                "title": "拔草推荐",
+                "list": [
+                  {
+                    "img": "//img10.360buyimg.com/focus/s140x140_jfs/t20356/99/118471868/26414/e301e0b7/5afd3d61Ne42d8f0d.jpg",
+                    "name": "口红"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cate": "个护清洁",
+            "list": [
+              {
+                "title": "明星品牌",
+                "list": [
+                  {
+                    "img": "//img13.360buyimg.com/focus/s140x140_jfs/t19159/296/2561042023/49706/b5b9a38c/5afd5700N355dfa7d.jpg",
+                    "name": "得宝"
+                  }
+                ]
+              },
+              {
+                "title": "纸品湿巾",
+                "list": [
+                  {
+                    "img": "//img13.360buyimg.com/focus/s140x140_jfs/t21769/101/124948952/48248/832ede7b/5afd568bN971e6358.jpg",
+                    "name": "抽纸"
+                  }
+                ]
+              }
+            ]
+          }
+    ]
+}

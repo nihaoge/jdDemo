@@ -7,7 +7,7 @@
       <mt-button icon="more" slot="right"></mt-button>
     </mt-header>
 
-    <div v-if="mobile" class="login">
+    <div v-if="userinfo.mobile" class="login">
       登入后可同步购物车商品
       <span>登入</span>
     </div>
@@ -15,12 +15,13 @@
       <div v-if="caArr.length > 0">
 
       <mailz v-for="(item,idx) in caArr" :key='idx' :item='item' ></mailz>
-</div>
-      <div v-else style="text-align:center;line-height:800%;color:#666;font-size:0.8rem;">购物车暂无商品...</div>
-
       <footer>
-        <van-submit-bar :price="3050" button-text="提交订单" @submit="onSubmit" />
+        <van-submit-bar :price='total' button-text="提交订单" @submit="onSubmit" />
       </footer>
+</div>
+      <div v-else style="text-align:center;line-height:800%;color:#666;font-size:0.8rem;">购物车暂无商品...<br><a class="ts" href="./"> 立即选购商品 </a></div>
+
+      
     </div>
   </div>
 </template>
@@ -42,11 +43,18 @@ export default {
   },
   
   computed: {
-    ...mapState(["userinfo", "caArr"])
+    ...mapState(["userinfo", "caArr"]),
+    total(){
+      let t = 0
+      this.caArr.map((ele)=>{
+        t +=ele.rmb
+        
+        console.log(t);
+        
+      })
+      return t*100
+    }
   }
-
-
-  
 };
 </script>
 
@@ -54,6 +62,7 @@ export default {
 .cat {
   .xinxi {
     margin-top: 0.16rem;
+    
   }
   .login {
     width: 100%;
@@ -75,5 +84,15 @@ export default {
       margin-left: 0.186rem;
     }
   }
+}
+.ts{
+ display:inline-block;
+ background: rgb(241, 53, 53);
+ border-radius: 15px;
+ height: 1rem;
+ border:1px solid #666;
+ font-size:0.58rem;
+line-height: 1rem;
+color: rgb(243, 217, 217);
 }
 </style>
