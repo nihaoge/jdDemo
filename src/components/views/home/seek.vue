@@ -10,14 +10,18 @@
     <input type="text" placeholder="电脑主机">
   </div>
 
-  <span>登录</span>
+  <span @click="click">登录</span>
 
 </div>
 </template>
 
 <script>
 export default {
-
+methods: {
+ click(){
+      this.$router.push('./login')
+    }
+},
 }
 </script>
 

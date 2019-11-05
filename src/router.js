@@ -8,6 +8,8 @@ import cart from './components/views/cart/cart.vue'
 import cate from './components/views/cate/cate.vue'
 import jdm from './components/views/jdm/jdm.vue'
 import user from './components/views/user/user.vue'
+import login from './components/views/login/login.vue'
+
 
 const router = new VueRouter({
     routes: [{
@@ -33,6 +35,10 @@ const router = new VueRouter({
         {
             path:'/',
             redirect:'/home'
+        },
+        {
+            path: '/login',
+            component: login
         }
     ]
 })
