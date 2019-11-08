@@ -1,7 +1,8 @@
 # jdDemo
 * name zhh 
 * time 2019,10,31
-
+* jdDemo Powered by Vue
+* 
 ## Project setup
 ```
 npm install
