@@ -38,7 +38,7 @@ export default {
     }
   },
   computed: {
-    ...mapState(['skArr'])
+    ...mapState(['skArr'],['caArr'])
   },
   mounted() {
     this.getsKill()
@@ -46,11 +46,15 @@ export default {
 methods: {
   ...mapActions(['getsKill']),
     ...mapMutations(["upcaArr"]),
+   
 
    click(item){
       this.$messagebox.confirm('确定添加到购物车?').then(action=>{
+        console.log(1111111111111);
+        
         if(action==='confirm'){
           this.upcaArr({type:'insert',item:item})
+
         }
       })
       
