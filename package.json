@@ -13,7 +13,7 @@
     "core-js": "^3.3.2",
     "mini-ui": "0.0.1-alpha",
     "mint-ui": "^2.2.13",
-    "node-sass": "^4.13.0",
+    "node-sass": "^4.13.1",
     "vant": "^2.2.10",
     "vue": "^2.6.10",
     "vue-router": "^3.1.3",
